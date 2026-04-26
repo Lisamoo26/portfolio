@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lisa | eLearning Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --purple-dark: #2d1f3d;
+      --purple-mid: #4a2d6b;
+      --purple-btn: #7b3fa0;
+      --purple-btn-hover: #5e2f7e;
+      --text-dark: #1a1a1a;
+      --text-body: #3a3a3a;
+      --white: #ffffff;
+      --rule: #e0d6eb;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--white);
+      color: var(--text-dark);
+    }
+
+    /* HEADER */
+    header {
+      background: linear-gradient(135deg, var(--purple-dark) 0%, var(--purple-mid) 60%, #1a0f2e 100%);
+      padding: 64px 40px 56px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 70% 50%, rgba(123,63,160,0.25) 0%, transparent 65%);
+      pointer-events: none;
+    }
+
+    header h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.2rem, 6vw, 4rem);
+      font-weight: 300;
+      color: var(--white);
+      letter-spacing: 0.04em;
+      position: relative;
+      border: 1px solid rgba(255,255,255,0.25);
+      display: inline-block;
+      padding: 18px 48px;
+    }
+
+    /* MAIN CONTENT */
+    main {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 56px 32px 80px;
+    }
+
+    .welcome {
+      margin-bottom: 52px;
+    }
+
+    .welcome h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.9rem;
+      font-weight: 600;
+      margin-bottom: 14px;
+      color: var(--text-dark);
+    }
+
+    .welcome p {
+      font-size: 1rem;
+      line-height: 1.75;
+      color: var(--text-body);
+      max-width: 720px;
+    }
+
+    /* COURSE CARDS */
+    .course {
+      border-top: 1px solid var(--rule);
+      padding: 44px 0 48px;
+    }
+
+    .course:last-child {
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .course h3 {
+      font-size: 1.25rem;
+      font-weight: 500;
+      margin-bottom: 14px;
+      color: var(--text-dark);
+      letter-spacing: 0.01em;
+    }
+
+    .course p {
+      font-size: 0.97rem;
+      line-height: 1.75;
+      color: var(--text-body);
+      max-width: 700px;
+      margin-bottom: 28px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--purple-btn);
+      color: var(--white);
+      text-decoration: none;
+      padding: 12px 28px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.92rem;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      transition: background 0.2s ease;
+    }
+
+    .btn:hover {
+      background: var(--purple-btn-hover);
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 28px;
+      font-size: 0.82rem;
+      color: #999;
+      border-top: 1px solid var(--rule);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Lisa | eLearning Portfolio</h1>
+  </header>
+
+  <main>
+    <section class="welcome">
+      <h2>Welcome</h2>
+      <p>I'm Lisa, a fintech compliance professional with six years of experience. This portfolio showcases three eLearning courses I built in Articulate Rise 360, each demonstrating a different aspect of my instructional design process.</p>
+    </section>
+
+    <section class="course">
+      <h3>Course 1: Putting the Customer First</h3>
+      <p>A customer experience course built for frontline service teams at a fictional fintech company, ClearSend. Designed around a real business problem, this course focuses on active listening and empathy skills that improve client interactions during high stress moments like delayed transfers and service issues.</p>
+      <a class="btn" href="https://lisamoo26.github.io/portfolio/course1" target="_blank">View Course</a>
+    </section>
+
+    <section class="course">
+      <h3>Course 2: Is your Documentation Ready for an Audit Right Now?</h3>
+      <p>A compliance course designed for fintech and financial services professionals. Covers the four standards of audit-ready documentation, the six most common errors that create findings, and practical tools learners can use to self-check their work before an audit starts.</p>
+      <a class="btn" href="https://lisamoo26.github.io/portfolio/course2" target="_blank">View Course</a>
+    </section>
+
+    <section class="course">
+      <h3>Course 3: From Idea to Impact: My eLearning Design Process</h3>
+      <p>A look inside how I think, build and design training that works.</p>
+      <a class="btn" href="https://lisamoo26.github.io/portfolio/course3" target="_blank">View Course</a>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2026 Lisa | eLearning Portfolio
+  </footer>
+
+</body>
+</html>
